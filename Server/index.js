@@ -1,6 +1,7 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import connectDB from "./src/database/connect.js";
+// import { protect } from middlewares/AuthMiddleware.js;
 
 dotenv.config();
 

@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar';
-import PostFeed from './components/PostFeed';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import { Routes , Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Ref from './pages/Ref';
+import Profile from './pages/Profile';
 function App() {
   const [isDark, setIsDark] = useState(true);
 
@@ -18,6 +17,8 @@ function App() {
         <Route path = "/login" element={<Login />} />
         <Route path = "/signup" element={<SignUp />} />
       </Routes>
+      {/* <Ref/> */}
+      {/* <Profile /> */}
     </div>
   );
 }
