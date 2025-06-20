@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
@@ -209,9 +210,11 @@ export default function LoginPage() {
           <div className="mt-8 text-center">
             <p className="text-gray-400">
               Don't have an account?{' '}
+              <Link to = "/signup">
               <a href="#" className="text-blue-400 hover:text-blue-300 font-medium transition-colors">
                 Sign up
               </a>
+              </Link>
             </p>
           </div>
         </div>
